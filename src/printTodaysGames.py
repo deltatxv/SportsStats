@@ -1,20 +1,27 @@
 import datetime
 import requests
 
-from src.utils.tools import *
+from colorama import Style
+
+from src.utils.tools import get_todays_games_json_from_url, get_games_from_json
 from src.config import *
 
 def printGame(game):
-    home_team = game[0]
-    away_team = game[1]
-    time = game[2]
+    home_team = game.home_performance.team.getFullName()
+    home_score = game.home_performance.getPointsScored()
+
+    away_team = game.away_performance.team.getFullName()
+    away_score = game.away_performance.getPointsScored()
+
+    time = game.time
     
-    if "EST" not in time: # means already started (i.e. Q1, Final, etc.)
-        home_score = game[3]
-        away_score = game[4]
-        
-    print(f"{Fore.YELLOW}{time}:\t\t{OUTPUT_COLORS['AWAY']}{away_score} {OUTPUT_COLORS['@']}- {OUTPUT_COLORS['HOME']}{home_score}\t\t{OUTPUT_COLORS['AWAY']}{away_team} {OUTPUT_COLORS['@']}@ {OUTPUT_COLORS['HOME']}{home_team}")
-    
+    if game.inProgress():
+        print(f"{Fore.YELLOW}{game.time}:\t\t{OUTPUT_COLORS['AWAY']}{away_score} {OUTPUT_COLORS['@']}- {OUTPUT_COLORS['HOME']}{home_score}\t\t{OUTPUT_COLORS['AWAY']}{away_team} {OUTPUT_COLORS['@']}@ {OUTPUT_COLORS['HOME']}{home_team}")
+        streaming_link = game.getStreamingLink()
+        print(Style.RESET_ALL, f"-->Link: {streaming_link}")
+    else:
+        print(f"{Fore.YELLOW}{game.time}:\t\t{OUTPUT_COLORS['AWAY']}{away_team} {OUTPUT_COLORS['@']}@ {OUTPUT_COLORS['HOME']}{home_team}")
+
 def printGames(games):
     for game in games:
         printGame(game)
