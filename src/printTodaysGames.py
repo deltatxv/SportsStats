@@ -16,7 +16,6 @@ def printGames(games):
 
 def printTodaysGames():
     data = get_todays_games_json_from_url(TODAYS_GAMES_URL)
-    print(data)
     games = create_todays_games_from_json(data)
     print("\n")
     print(f"{OUTPUT_COLORS['HEADER']}There are {len(games)} games scheduled for today:\n")
