@@ -1,5 +1,17 @@
-import time
 import re
+
+def convert_et_time_string_to_pacific(et_time_str):
+    # Parse time string (e.g. "7:00 pm ET") to PT
+    match = re.match(r'(\d+):(\d+) ([apmAPM]+) (\w+)', et_time_str)
+    if match:
+        hours, minutes, am_pm, timezone = match.groups()
+
+        hours = int(hours)
+        hours -= 3 # 3 hour time diff from est to pst
+        return f"{str(hours)}:{minutes}"
+    else:
+        # default to whatever we were given
+        return et_time_str
 
 class Game:
     def __init__(self, home_team_performance, away_team_performance, game_time):
@@ -16,18 +28,8 @@ class Game:
     def getTime(self):
         if self.inProgress():
             return self.time
-
-        # Parse time string (e.g. "7:00 pm ET") to PT
-        match = re.match(r'(\d+):(\d+) ([apmAPM]+) (\w+)', self.time)
-        if match:
-            hours, minutes, am_pm, timezone = match.groups()
-
-            hours = int(hours)
-            hours -= 3 # 3 hour time diff from est to pst
-            return f"{str(hours)}:{minutes}"
         else:
-            # default to whatever nba api gave us
-            return self.time
+            return convert_et_time_string_to_pacific(self.time)
 
     def getStreamingLink(self):
         home_team_name = self.home_performance.team.name
