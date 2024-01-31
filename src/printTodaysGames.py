@@ -22,7 +22,7 @@ def printGames(games):
 def printTodaysGames():
     data = get_todays_games_json_from_url(TODAYS_GAMES_URL)
     games = get_games_from_json(data)
-    print(data)
+    # print(data)
     print(f"{OUTPUT_COLORS['HEADER']}There are {len(games)} games scheduled for today:\n")
     printGames(games)
     print()
