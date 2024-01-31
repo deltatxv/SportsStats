@@ -20,7 +20,8 @@ def create_todays_games_from_json(input_list):
     for game in input_list:
         home = game.get('h')
         away = game.get('v')
+        time = game.get('stt')
         home_team = home.get('tc') + ' ' + home.get('tn')
         away_team = away.get('tc') + ' ' + away.get('tn')
-        games.append([home_team, away_team])
+        games.append([home_team, away_team, time])
     return games
