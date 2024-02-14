@@ -20,10 +20,13 @@ class Game:
         self.time = game_time
 
     def inProgress(self):
-        if "ET" in self.time or "Final" in self.time:
-            return False
-        else:
+        if (self.isFinished() is False) and ("ET" not in self.time):
             return True
+        else:
+            return False
+    
+    def isFinished(self):
+        return "Final" in self.time
 
     def getTime(self):
         if self.inProgress():
