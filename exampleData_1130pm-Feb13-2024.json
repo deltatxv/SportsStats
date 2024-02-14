@@ -1,0 +1,32 @@
+[
+    {'gid': '0022300772', 'gcode': '20240213/OKCORL', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2024-01-13', 'gres': 'OKC won 112-100', 'seri': 'OKC leads series 1-0', 'gid': '0022300546'
+        }, 'v': {'ta': 'OKC', 'q1': 31, 's': 127, 'q2': 29, 'q3': 32, 'q4': 35, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Thunder', 'tc': 'Oklahoma City', 'tid': 1610612760
+        }, 'h': {'ta': 'ORL', 'q1': 32, 's': 113, 'q2': 20, 'q3': 30, 'q4': 31, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Magic', 'tc': 'Orlando', 'tid': 1610612753
+        }
+    },
+    {'gid': '0022300771', 'gcode': '20240213/BOSBKN', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2023-11-10', 'gres': 'BOS won 121-107', 'seri': 'BOS leads series 2-0', 'gid': '0022300010'
+        }, 'v': {'ta': 'BOS', 'q1': 36, 's': 118, 'q2': 36, 'q3': 26, 'q4': 20, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Celtics', 'tc': 'Boston', 'tid': 1610612738
+        }, 'h': {'ta': 'BKN', 'q1': 30, 's': 110, 'q2': 27, 'q3': 25, 'q4': 28, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Nets', 'tc': 'Brooklyn', 'tid': 1610612751
+        }
+    },
+    {'gid': '0022300773', 'gcode': '20240213/MIAMIL', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2023-11-28', 'gres': 'MIL won 124-131', 'seri': 'MIL leads series 2-0', 'gid': '0022300056'
+        }, 'v': {'ta': 'MIA', 'q1': 40, 's': 123, 'q2': 29, 'q3': 29, 'q4': 25, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Heat', 'tc': 'Miami', 'tid': 1610612748
+        }, 'h': {'ta': 'MIL', 'q1': 28, 's': 97, 'q2': 24, 'q3': 24, 'q4': 21, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Bucks', 'tc': 'Milwaukee', 'tid': 1610612749
+        }
+    },
+    {'gid': '0022300775', 'gcode': '20240213/MINPOR', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2024-01-12', 'gres': 'MIN won 116-93', 'seri': 'MIN leads series 1-0', 'gid': '0022300538'
+        }, 'v': {'ta': 'MIN', 'q1': 37, 's': 121, 'q2': 22, 'q3': 25, 'q4': 37, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Timberwolves', 'tc': 'Minnesota', 'tid': 1610612750
+        }, 'h': {'ta': 'POR', 'q1': 25, 's': 109, 'q2': 26, 'q3': 32, 'q4': 26, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Trail Blazers', 'tc': 'Portland', 'tid': 1610612757
+        }
+    },
+    {'gid': '0022300774', 'gcode': '20240213/SACPHX', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2024-01-16', 'gres': 'PHX won 117-119', 'seri': 'SAC leads series 2-1', 'gid': '0022300567'
+        }, 'v': {'ta': 'SAC', 'q1': 39, 's': 125, 'q2': 28, 'q3': 25, 'q4': 33, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Kings', 'tc': 'Sacramento', 'tid': 1610612758
+        }, 'h': {'ta': 'PHX', 'q1': 38, 's': 130, 'q2': 26, 'q3': 30, 'q4': 36, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Suns', 'tc': 'Phoenix', 'tid': 1610612756
+        }
+    },
+    {'gid': '0022300776', 'gcode': '20240213/DETLAL', 'p': 4, 'st': 3, 'stt': 'Final', 'cl': '00: 00.0', 'seq': 0, 'lm': {'gdte': '2023-11-29', 'gres': 'LAL won 107-133', 'seri': 'LAL leads series 1-0', 'gid': '0022300258'
+        }, 'v': {'ta': 'DET', 'q1': 24, 's': 111, 'q2': 24, 'q3': 31, 'q4': 32, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Pistons', 'tc': 'Detroit', 'tid': 1610612765
+        }, 'h': {'ta': 'LAL', 'q1': 34, 's': 125, 'q2': 37, 'q3': 28, 'q4': 26, 'ot1': 0, 'ot2': 0, 'ot3': 0, 'ot4': 0, 'ot5': 0, 'ot6': 0, 'ot7': 0, 'ot8': 0, 'ot9': 0, 'ot10': 0, 'tn': 'Lakers', 'tc': 'Los Angeles', 'tid': 1610612747
+        }
+    }
+]
