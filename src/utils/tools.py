@@ -1,5 +1,9 @@
 import requests
 
+from nba_api.stats.static import teams
+from nba_api.stats.endpoints import boxscoretraditionalv2
+import pandas as pd
+
 from src.utils.game import Game
 from src.utils.teamPerformance import TeamPerformance
 from src.utils.team import Team
@@ -13,6 +17,15 @@ games_header = {
     'origin': 'http://stats.nba.com',
     'Referer': 'https://github.com'
 }
+
+def get_box_score(game_id):
+    # Get box score data for the game
+    box_score = boxscoretraditionalv2.BoxScoreTraditionalV2(game_id=game_id)
+    
+    # Convert the player stats to a pandas DataFrame for easier manipulation
+    player_stats_df = box_score.player_stats.get_data_frame()
+    
+    return player_stats_df
 
 def get_todays_games_json_from_url(url):
     raw_data = requests.get(url, headers=games_header)
@@ -37,7 +50,8 @@ def get_games_from_json(input_list):
         away_team_performance = get_team_performance_from_json(away_json)
 
         time = game.get('stt')
-        game = Game(home_team_performance, away_team_performance, time)
+        game_id = game.get('gid')
+        game = Game(game_id, home_team_performance, away_team_performance, time)
         games.append(game)
 
     return games

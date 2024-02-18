@@ -14,7 +14,8 @@ def convert_et_time_string_to_pacific(et_time_str):
         return et_time_str
 
 class Game:
-    def __init__(self, home_team_performance, away_team_performance, game_time):
+    def __init__(self, game_id, home_team_performance, away_team_performance, game_time):
+        self.game_id = game_id
         self.home_performance = home_team_performance
         self.away_performance = away_team_performance
         self.time = game_time

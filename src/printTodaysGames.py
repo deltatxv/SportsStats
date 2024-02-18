@@ -3,7 +3,7 @@ import requests
 
 from colorama import Style
 
-from src.utils.tools import get_todays_games_json_from_url, get_games_from_json
+from src.utils.tools import get_todays_games_json_from_url, get_games_from_json, get_box_score
 from src.config import *
 
 def printGame(game):
@@ -22,6 +22,10 @@ def printGame(game):
         print(Style.RESET_ALL, f"-->Link: {streaming_link}") 
     else:
         print(f"{Fore.YELLOW}{time}:\t{OUTPUT_COLORS['AWAY']}{away_team} {OUTPUT_COLORS['@']}@ {OUTPUT_COLORS['HOME']}{home_team}")
+
+    # TODO: improve this to pretty print
+    # box_score_df = get_box_score(game.game_id)
+    # print(box_score_df)
 
 def printGames(games):
     for game in games:
