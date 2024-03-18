@@ -1,8 +1,6 @@
 import requests
 
-from nba_api.stats.static import teams
 from nba_api.stats.endpoints import boxscoretraditionalv2
-import pandas as pd
 
 from src.utils.game import Game
 from src.utils.teamPerformance import TeamPerformance

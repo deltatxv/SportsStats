@@ -1,9 +1,6 @@
-import datetime
-import requests
-
 from colorama import Style
 
-from src.utils.tools import get_todays_games_json_from_url, get_games_from_json, get_box_score
+from src.utils.tools import get_todays_games_json_from_url, get_games_from_json
 from src.config import *
 
 def printGame(game):
