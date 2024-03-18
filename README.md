@@ -1,3 +1,5 @@
+# SportsStats
+
 ## Idea
 Simple CLI tool to see current sports scores and box scores without having to navigate to a special app or website.
 
